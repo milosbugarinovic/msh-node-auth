@@ -1,0 +1,33 @@
+{
+  "extends": ["tslint-config-standard", "tslint-config-prettier"],
+  "rules": {
+    "naming-convention": [
+      true,
+      {
+        "format": "camelCase",
+        "leadingUnderscore": "allow",
+        "modifiers": "local",
+        "type": "variable"
+      },
+      {
+        "leadingUnderscore": "allow",
+        "modifiers": "private",
+        "prefix": "_",
+        "type": "member"
+      },
+      {
+        "leadingUnderscore": "allow",
+        "modifiers": "private",
+        "prefix": "_",
+        "type": "method"
+      },
+      {
+        "leadingUnderscore": "require",
+        "modifiers": "protected",
+        "type": "method"
+      }
+    ],
+    "ordered-imports": true,
+    "variable-name": [true, "ban-keywords"]
+  }
+}
